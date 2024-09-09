@@ -50,6 +50,15 @@ public class FileManipulation {
 
     }
 
+    public static void deleteFile(String filename) {
+        File myFile = new File(filename.concat(".txt"));
+        if (myFile.delete()) {
+            System.out.println("File deleted successfully.");
+        } else {
+            System.out.println("Error in delete file.");
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String filename;
@@ -58,7 +67,7 @@ public class FileManipulation {
         int option;
 
         do {
-            System.out.println("1- Create a file\n 2- Write in file\n 3- Delete the file\n 4- Exit");
+            System.out.println("1- Create a file\n 2- Write in file\n 3 - Read file\n 4- Delete the file\n 5- Exit");
             option = scan.nextInt();
 
             switch (option) {
@@ -76,10 +85,27 @@ public class FileManipulation {
                     writeInFile(filename, message);
                     break;
                 }
+                case 3: {
+                    readFile(filename);
+                    break;
+                }
+                case 4: {
+                    deleteFile(filename);
+                    break;
+                }
+
+                case 5: {
+                    System.out.println("Exiting...");
+                    break;
+                }
+
+                default: {
+                    System.out.println("Invalid option.");
+                }
 
             }
 
-        } while(option != 4);
+        } while(option != 5);
 
     }
 }
