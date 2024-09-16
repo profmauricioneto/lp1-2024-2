@@ -43,6 +43,7 @@ public class ExampleFlowLayout {
         // configurações da tela
         frame.setSize(300, 300);
         frame.setVisible(true);
+        frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
