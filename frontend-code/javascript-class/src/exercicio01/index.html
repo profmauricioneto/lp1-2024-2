@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio HTML + JS</title>
+</head>
+<body>
+    <h3>Verificação do maior valor!</h3>
+
+    <div class="input-data">
+        <div id="f-data">
+            <label for="first-value">
+                Valor 1:
+                <input type="number" id="first-value" name="first-value" required/>
+            </label>
+        </div>
+
+        <div id="s-data">
+            <label for="second-value">
+                Valor 2:
+                <input type="number" id="second-value" name="second-value" required/>
+            </label>
+        </div>
+
+        <div id="btn-send">
+            <button onclick="biggerThan()"></button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
