@@ -12,12 +12,20 @@ function addProduto() {
 }
 
 function verificarEstoque(nomeProduto) {
-  for (let i = 0; i < estoque.length; i++) {
-    if (estoque[i].nome == nomeProduto) {
+
+  estoque.forEach((item) => {
+    if (item.nome === nomeProduto) {
       console.log("Produto Encontrado no Estoque.");
-      console.log(`Quantidade em estoque: ${estoque[i].quantidade}`);
+      console.log(`Quantidade em estoque: ${item.quantidade}`);
     }
-  }
+  })
+
+  // for (let i = 0; i < estoque.length; i++) {
+  //   if (estoque[i].nome == nomeProduto) {
+  //     console.log("Produto Encontrado no Estoque.");
+  //     console.log(`Quantidade em estoque: ${estoque[i].quantidade}`);
+  //   }
+  // }
 }
 
 function main() {
