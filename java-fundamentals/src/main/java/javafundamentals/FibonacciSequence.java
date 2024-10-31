@@ -29,5 +29,7 @@ public class FibonacciSequence {
         System.out.println("Enter the number of terms : ");
         terms = scan.nextInt();
         fibonacci(terms);
+
+        scan.close();
     }
 }

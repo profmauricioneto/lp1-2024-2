@@ -25,5 +25,7 @@ public class MoneyMachine {
 
         cash1 = initialAmount;
         System.out.println("Cash 1: " + cash1);
+
+        scan.close();
     }
 }

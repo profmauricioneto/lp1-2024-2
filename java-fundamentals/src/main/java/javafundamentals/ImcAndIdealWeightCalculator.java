@@ -38,5 +38,7 @@ public class ImcAndIdealWeightCalculator {
 
         System.out.println("IMC Result: " + imc);
         System.out.println("Ideal Weight Result: " + idealWeight);
+
+        scan.close();
     }
 }

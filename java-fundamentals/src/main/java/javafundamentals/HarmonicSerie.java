@@ -15,5 +15,7 @@ public class HarmonicSerie {
             hn = hn + (double)1/i;
         }
         System.out.println("Harmonic Serie value: " + hn);
+
+        scan.close();
     }
 }

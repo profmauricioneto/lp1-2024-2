@@ -18,5 +18,7 @@ public class SalaryIncrease {
 
         System.out.printf("New salary: %.2f\n", newSalary);
         System.out.println("Percentage Salary: " + salaryIncrease);
+        
+        scan.close();
     }
 }

@@ -19,5 +19,7 @@ public class MainDiagonal {
             }
         }
         System.out.println("Main diagonal Summation: " + acc);
+
+        scan.close();
     }
 }

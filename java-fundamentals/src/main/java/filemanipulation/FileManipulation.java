@@ -106,6 +106,6 @@ public class FileManipulation {
             }
 
         } while(option != 5);
-
+        scan.close();
     }
 }

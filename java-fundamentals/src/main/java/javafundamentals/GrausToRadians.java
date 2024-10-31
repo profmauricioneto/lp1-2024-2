@@ -14,5 +14,7 @@ public class GrausToRadians {
         radians = (graus*Math.PI)/180;
 
         System.out.print("Radius: " + radians);
+
+        scan.close();
     }
 }

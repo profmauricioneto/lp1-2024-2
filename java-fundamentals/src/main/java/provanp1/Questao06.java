@@ -15,6 +15,8 @@ public class Questao06 {
         media = media/3;
         System.out.println("Aluno: " + nome);
         System.out.println("Media: " + media);
+
+        scan.close();
     }
 
     public static void main(String[] args) {
@@ -27,6 +29,8 @@ public class Questao06 {
             nome = scan.next();
             processarNotas(nome, notas);
         }
+
+        scan.close();
 
     }
 }

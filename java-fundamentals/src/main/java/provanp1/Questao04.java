@@ -25,5 +25,7 @@ public class Questao04 {
         System.out.println("Valor da Compra: " + valorCompra);
         System.out.println("Valor do Desconto: " + (valorCompra*desconto));
         System.out.println("Valor a ser Pago: " + (valorCompra - valorCompra*desconto));
+
+        scan.close();
     }
 }

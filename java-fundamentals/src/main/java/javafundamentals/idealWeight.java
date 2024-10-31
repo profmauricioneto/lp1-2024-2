@@ -14,6 +14,7 @@ public class idealWeight {
         System.out.print("Gender: ");
         gender = scan.next();
         gender = gender.toLowerCase();
+        scan.close();
 
 
         switch(gender) {
@@ -25,11 +26,12 @@ public class idealWeight {
                 idealWeight = 62.1 * height - 44.7;
                 break;
             }
-            default:
+            default:{
                 System.out.println("Invalid gender");
                 return;
+            }
         }
         System.out.println("Ideal Weight is " + idealWeight + " kg");
-        scan.close();
+        
     }
 }

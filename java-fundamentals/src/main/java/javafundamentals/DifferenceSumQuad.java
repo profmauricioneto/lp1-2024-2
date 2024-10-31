@@ -22,5 +22,7 @@ public class DifferenceSumQuad {
         quadSum = quadSum*quadSum;
         int difference = quadSum - sumQuad;
         System.out.printf("Sum of Squares: %d - Square of the Sum %d = %d ", quadSum, sumQuad, difference);
+
+        scan.close();
     }
 }

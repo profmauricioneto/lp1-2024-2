@@ -9,5 +9,7 @@ public class InputExample {
         System.out.print("Enter with your age: ");
         age = scan.nextInt();
         System.out.println("Your age is: " + age);
+
+        scan.close();
     }
 }

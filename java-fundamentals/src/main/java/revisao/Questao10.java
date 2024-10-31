@@ -28,5 +28,6 @@ public class Questao10 {
                 System.out.println("A equação possui duas raízes reais: " + x1 + " e " + x2);
             }
         }
+        scan.close();
     }
 }
