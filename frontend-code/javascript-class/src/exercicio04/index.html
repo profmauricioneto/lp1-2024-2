@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Manipulação JS</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap;
+        }
+
+        .caracteristicas {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h2 id="title">Meu Título</h2>
     </header>
-    <div id="text-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit quas doloribus? Voluptatibus doloremque earum a possimus recusandae, odit eius commodi magni non expedita quos ullam, in fugiat, ducimus dolores.</p>
-    </div>
+    <main>
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit quas doloribus? Voluptatibus doloremque earum a possimus recusandae, odit eius commodi magni non expedita quos ullam, in fugiat, ducimus dolores.</p>
+        </div>
+    
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit quas doloribus? Voluptatibus doloremque earum a possimus recusandae, odit eius commodi magni non expedita quos ullam, in fugiat, ducimus dolores.</p>
+        </div>
+    
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit quas doloribus? Voluptatibus doloremque earum a possimus recusandae, odit eius commodi magni non expedita quos ullam, in fugiat, ducimus dolores.</p>
+        </div>
+
+        <section>
+            <p>JavaScript</p>
+            <p class="caracteristicas">É interpretado</p>
+            <p class="caracteristicas">Dinamicamente tipado</p>
+            <p class="caracteristicas">Multiparadigma</p>
+            <p class="caracteristicas">Simples</p>
+        </section>
+    </main>
     <button onclick="changeTitle()">Mudar Título</button>
     <script src="script.js"></script>
 </body>
